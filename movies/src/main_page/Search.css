@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --text-clr: #4a5c6c;
+    --bg-clr: #f2f4fc;
+    --border-clr: rgb(156, 176, 193);
+    --shadow-clr: lightblue;
+    --btn-color: #D5E7F2;
+    --btn-clr-click: #80A7BF;
+    --textType: "Josefin Sans", sans-serif;
+  }
+
+  /*all the search section*/
+.search-section {
+    margin: auto;
+    text-align: center;
+    margin: 4rem 0;
+  }
+
+/*Style of the input that the user can use for search the movie*/
+  input {
+    width: 30rem;
+    border-radius: 100px;
+    border: 1px solid var(--border-clr);
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+    box-shadow: 0.2rem 0.2rem var(--shadow-clr);
+    outline: none;
+    margin-top: 2rem;
+  }
+
+/*Error Mensage when type in input*/
+  .card-error p {
+    color: red;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+  }
+
+/*Style the "div" that the buttons are*/
+  .button-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    height: 10rem;
+  }
+
+/*Style the buttons that change the current page*/
+.button-page button{
+    width: 8rem;
+    height: 4rem;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 0.5rem 0.5rem var(--shadow-clr);
+    background-color: var(--btn-color);
+    font-size: 1.5rem;
+}
+
+/*Style the button when clicked*/
+.button-page button:active{
+    box-shadow: 0.3rem 0.3rem var(--btn-clr-click);
+    background-color: var(--btn-clr-click);
+    transform: translateY(4px) translateX(3px);
+}
+
+/*Page indicator*/
+.search-section p{
+  font-size: 2rem;
+  color: var(--text-clr);
+}
+
+/*Responsive code*/
+@media (max-width: 998px) {
+    input {
+        width: 25rem;
+    }
+}

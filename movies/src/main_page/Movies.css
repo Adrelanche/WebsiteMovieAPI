@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --text-clr: #A3C9D9;
+    --bg-clr: #2F4959;
+    --border-clr: rgb(156, 176, 193);
+    --textType: "Josefin Sans", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bg-clr);
+}
+
+h2, h3 {
+    font-family: var(--textType);
+    color: var(--text-clr);
+    font-size: 2rem;
+    transition: all 0.3s linear;
+}
+
+a {
+    text-decoration: none;
+}
+  
+img {
+    min-width: 8rem;
+    max-height: 26rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    transition: all 0.4s linear;
+}
+  
+/*grid*/
+.grid {
+    display: grid;
+    gap: 3rem;
+}
+
+.grid-4-col {
+    grid-template-columns: repeat(4, 1fr);
+}
+  
+/*Style of the movie card*/
+.card {
+    width: 25rem;
+    max-width: 30rem;
+    min-height: 30rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*when pass the cursor over*/
+a:hover {
+    background-color: var(--text-clr);
+    color: var(--bg-clr);
+  }
+  
+  a:hover h2 {
+    color: var(--bg-clr);
+    scale: 1.05;
+    display: inline-block;
+    transform: translateY(-1rem);
+  }
+  a:hover h3{
+    transform: translateY(1rem);
+    color: var(--bg-clr);
+  }
+  
+  a:hover img {
+    transform: scale(1.1);
+  }
+
+  /*Responsive code*/
+  @media (max-width: 1200px) {
+    .container {
+      margin: auto;
+      max-width: 110rem;
+    }
+    .grid-4-col {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 998px) {
+    .container {
+      max-width: 90rem;
+      margin: auto;
+    }
+    .grid-4-col {
+        grid-template-columns: 1fr 1fr;
+      }
+}
+
+@media (max-width: 768px) {
+    .container {
+      max-width: 70rem;
+      margin: auto;
+    }
+    .grid-4-col {
+      grid-template-columns: 1fr;
+    }
+}

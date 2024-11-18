@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--textType);
+}
+
+:root {
+  --text-clr: #A3C9D9;
+  --bg-clr: #2F4959;
+  --border-clr: rgb(156, 176, 193);
+  --textType: "Josefin Sans", sans-serif;
+}
+
+/*Style of the Link for all pages*/
+a {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 3.2rem 1rem;
+  color: var(--text-clr);
+  border: 0.2rem solid var(--text-clr);
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s linear;
+}

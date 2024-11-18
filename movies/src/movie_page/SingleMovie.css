@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --text-clr: #A3C9D9;
+    --bg-color: #80A7BF;
+    --card-bg-clr: #2F4959;
+    --shadow-box-clr: #525759;
+    --border-clr: rgb(156, 176, 193);
+    --textType: "Josefin Sans", sans-serif;
+  }
+
+  /*All the section of the page*/
+.movie-section {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-color);
+    display: grid;
+    place-items: center;
+  }
+  
+  /*Information of the movie*/
+  .movie-info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  /*Loading style*/
+  .loading {
+    font-size: 3.2rem;
+    color: var(--text-clr);
+    text-align: center;
+  }
+  
+  .movie-section .loading {
+    font-size: 3.2rem;
+    color: var(--card-bg-clr);
+    text-align: center;
+  }
+  
+  /*The content inside the card of the movie*/
+  .movie-card {
+    min-width: 30rem;
+    width: 50vw;
+    padding: 1rem; 
+    background-color: var(--card-bg-clr);
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 0.6fr 1fr;
+    align-items: center;
+    box-shadow: 0.2rem 0.2rem var(--shadow-box-clr);
+    border-radius: 2rem;
+  }
+  
+  /*Image poster of the movie*/
+  .movie-card img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 1rem;
+    max-height: 50rem;
+    height: auto;
+  }
+  
+  /*The title of the movie*/
+  .movie-card .title {
+    font-size: 2.6rem;
+    color: var(--text-clr);
+    font-weight: bold;
+  }
+  
+  /*Style informations movie*/
+  .card-text {
+    font-size: 1.8rem;
+  }
+
+  /*Style back button*/
+  .back-btn {
+    padding: 1.2rem 3.6rem;
+  }
+
+  /*The description of the movie*/
+  p{
+    font-size: 1.3rem;
+  }
+  
+  /*responsive code*/
+  @media (max-width: 980px) {
+
+    .movie-section {
+      padding: 4.8rem 0;
+    }
+  
+    .movie-card {
+      grid-template-columns: 1fr;
+    }
+  
+    .card-content {
+      padding-left: 2rem;
+    }
+  
+    .back-btn {
+      margin-bottom: 3rem;
+    }
+  }
